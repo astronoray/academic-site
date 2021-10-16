@@ -1,39 +1,33 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Ray Garner
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: CWRU Astronomy PhD Candidate
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: Case Western Reserve University
+  url: https://www.astronomy.case.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include galaxy evolution, star formation, satellite galaxies, and nebular diagnostics.
 
 # Interests to show in About widget
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Galaxy evolution
+- Star formation
+- Nebular diagnostics
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: BS in Physics
+    institution: Furman University
+    year: 2018
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -45,16 +39,16 @@ social:
   link: '/#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/Astrono_Ray
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
-- icon: linkedin
+  link: https://github.com/astronoray
+- icon: youtube
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.youtube.com/channel/UCJmyKp5pHuy_yCg5IJGkvQQ
+- icon: instagram
+  icon_pack: fab
+  link: https://www.instagram.com/astronoray
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
@@ -70,8 +64,10 @@ email: ""
 highlight_name: true
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hello! My name is Ray Garner and I am a PhD candidate working towards my PhD in Astronomy at Case Western Reserve University in Cleveland, Ohio. I previously attended [Furman University](https://www.furman.edu) in Greenville, South Carolina where I graduated with a B.S. in Physics. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+While I was at Furman, I completed research in general relativity with [Dr. Bill Baker](https://www.furman.edu/people/william-m-baker) and fellow student Zachary Carter. During the summer of 2017, I attended a Research Experience for Undergraduates (REU) at [Indiana University](https://www.indiana.edu) in Bloomington, Indiana. There, I worked on ionized gas kinematics of nearby, low-mass galaxies with [Dr. Liese van Zee](https://www.astro.indiana.edu/faculty/vanzee.shtml). 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+Currently, I am working with [Dr. Chris Mihos](https://astronomy.case.edu/faculty/chris-mihos/) on a detailed analysis of the spiral galaxy Messier 101 (NGC 5457) and its small satellite group using the deep, wide-field, narrowband imaging capabilities of the Burrell Schmidt 24/36-inch telescope. 
+
+<!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
