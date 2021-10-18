@@ -94,10 +94,7 @@ Now that we have the date of Christ's birth, we can begin to investigate any ast
 
 ## Simple Explanations: A Planet or a Comet?
 
-<img src="Venus-real_color.jpg"
-     alt="Venus"
-     style="float: right; margin-right: 10px;
-            width: 300px; height: auto;" />
+![Venus](Venus-real_color.jpg)
 
 Could it have been any of the planets? Venus is the brightest planet visible to us on Earth; perhaps it was Venus that the Magi saw. This is an old hypothesis and it had already fallen out of favor in the 19th century. Venus is in the sky almost continuously, and the Magi, as astrologers, would have known the motions of Venus and the other planets well. What's not impossible is that the Star could've been Venis _in combination_ with other planets. We'll return to this later. 
 
@@ -111,10 +108,12 @@ However, working backwards and checking with ancient Chinese records, shows that
 
 ## What About Multiple Planets?
 
-<img src="mercury_venus_moon.jpg"
+![Mercury and Venus above the Moon](mercury_venus_moon.jpg)
+
+<!-- <img src="mercury_venus_moon.jpg"
      alt="Mercury and Venus above the Moon"
      style="float: left; margin-left: 10px;
-            width: auto; height: 750;" />
+            width: auto; height: 750;" /> -->
 
 Other popular theories involve what is known as a conjunction of planets. A conjunction is when two or more planets line up in the sky in such a way that they appear close together, yet, in reality, they remain millions of miles apart. Occasionally, the planets appear so close together as to overlap in what is known as an occultation. Conjunctions have always been important to astrology, and it is with little doubt that the Magi would have analyzed and ascribed great important to conjunctions. 
 
@@ -186,7 +185,9 @@ Once again, they would not have long to wait. As Jupiter and Saturn dipped down 
 
 ## The Third Sign: Two Pairings in Pisces
 
-<img src='pairings.png' alt='Pairings in Pisces' style="width: 300px;"/>
+![Pairings in Pisces](pairings.png)
+
+<!-- <img src='pairings.png' alt='Pairings in Pisces' style="width: 300px;"/> -->
 
 On the evening of February 20, 5 BCE, something else happened. The two-day-old Moon would have passed very close to Jupiter in the night sky. The Magi would've seen the pairing of the Moon and Jupiter and the more southerly pairing of Mars and Saturn. The Magi have now seen four events in Pisces in quick succession. All they needed was a clear sign, something that would be easy to see, unmistakably written in the stars. 
 

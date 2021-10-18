@@ -8,7 +8,7 @@
 theme: minimal
 day_night: true
 font: ''
-font_size: L
+font_size: M
 
 # SEO
 
@@ -21,7 +21,7 @@ twitter: ''
 # Contact (edit or remove options as required)
 
 email: ray.three.garner@gmail.com
-phone: 770-377-1861
+phone: 
 address:
   street: 2083 MLK Jr. Dr.
   city: Cleveland
@@ -98,7 +98,7 @@ show_related:
 reading_time: true
 section_pager: false
 docs_section_pager: true
-sharing: true
+sharing: false
 copyright_license:
   enable: false
   allow_derivatives: false

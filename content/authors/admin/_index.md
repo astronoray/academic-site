@@ -14,7 +14,7 @@ organizations:
   url: https://www.astronomy.case.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include galaxy evolution, star formation, satellite galaxies, and nebular diagnostics.
+bio: I'm a budding scientist and amateur photographer raised in Georgia and living in Ohio. My research interests include galaxy evolution, star formation, satellite galaxies, and nebular diagnostics.
 
 # Interests to show in About widget
 interests:
