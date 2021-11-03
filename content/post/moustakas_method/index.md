@@ -39,22 +39,6 @@ tags:
 categories: []
 ---
 
-```python
-import os
-os.chdir('/Volumes/RayPass/Research/Abundance')
-
-import matplotlib.pyplot as plt
-import numpy as np
-from astropy.table import Table
-from astropy.io import fits
-from scipy.stats import norm
-%matplotlib inline
-
-plt.rcParams.update({'font.size': 14, 'xtick.minor.visible':True,
-                     'ytick.minor.visible':True})
-np.random.seed(5749)
-```
-
 ## Background - Strong Line Abundances
 
 When determining the oxygen abundance of an HII region or a star-forming galaxy as a whole, the most direct and physically motivated method is to measure the electron temperature ($T_e$) of the ionized gas using the intensity of one or more temperature-sensitive auroral lines such as \[OIII\]$\lambda$4363, \[NII\]$\lambda$5755, \[SIII\]$\lambda$6312, and \[OII\]$\lambda$7325 ([Dinerstein 1990](https://ui.adsabs.harvard.edu/abs/1990ASSL..161..257D/abstract); [Skillman 1998](https://ui.adsabs.harvard.edu/abs/1998salg.conf..457S/abstract); [Stasi&nacute;ska 2007](https://ui.adsabs.harvard.edu/abs/2007arXiv0704.0348S/abstract)). Unfortunately, these auroral lines are intrinsically faint, especially in metal-rich galaxies and star-forming regions. Therefore, when these lines are undetectable or not measured, _strong-line_ abundance calibrations are used to estimate the metallicity of the ionized gas. 
@@ -73,8 +57,18 @@ The advantage of $R_{23}$ as an oxygen abundance diagnostic is that it is direct
 
 An additional complication is that the relation between $R_{23}$ and metallicity is famously double-valued. For example, using the calibration of [McGaugh (1991; M91)](https://ui.adsabs.harvard.edu/abs/1991ApJ...380..140M/abstract), we can see the issue.
 
-
 ```python
+import matplotlib.pyplot as plt
+import numpy as np
+from astropy.table import Table
+from astropy.io import fits
+from scipy.stats import norm
+%matplotlib inline
+
+plt.rcParams.update({'font.size': 14, 'xtick.minor.visible':True,
+                     'ytick.minor.visible':True})
+np.random.seed(5749)
+
 def mcgaugh91_up(logR23,logO32):
     return 12 - 2.939 - 0.2*logR23 - 0.237*logR23**2 - 0.305*logR23**3 - 0.0283*logR23**4 - logO32*(0.0047 - 0.0221*logR23 - 0.102*logR23**2 - 0.0817*logR23**3 - 0.00717*logR23**4)
 
@@ -258,8 +252,6 @@ ax4.set_xlabel(r'$\log(R_{23})$')
 ax4.set_ylabel(r'$12 + \log(\mathrm{O/H})_{\mathrm{M91}}$')
 ax4.set_xlim(-1,1.5)
 ax4.set_ylim(8.0,9.25)
-
-
 ```
 
 
@@ -435,79 +427,6 @@ elif np.nanmedian(m101_z_up[:,i]) < np.nanmedian(m101_z_dw[:,i]):
 In the second case, the formal solution on the lower branch is larger than the solution on the upper branch (note that the blue triangle is now above the red circle in the plot on the left below). In the right plot below, the overlapping region of the histograms corresponds to values of $R_{23}$ and O$_{32}$ that lie _on_ the M91 calibration, that is, where $(\text{O/H})_{\text{upper}} > (\text{O/H})_{\text{lower}}$. If the central values of the two distributions are within $1\sigma$ of each other, as measured by the width of the overlapping region, we adopt the average of the two solutions as the oxygen abundance, and the width of the overlapping region as the $1\sigma$ uncertainty. In practice, these types of regions all have M91 abundances equal to the abundance around the turn-around region, $\approx 8.4$ dex; however, they also have large abundance errors, which reflects this ambiguity in picking a branch. 
 
 
-```python
-i = 9
-
-fig5 = plt.figure(figsize=(14,7), constrained_layout=True)
-ax5 = fig5.subplot_mosaic(
-        """
-        ab
-        """)
-
-# Plot the M91 calibration for particular O32 values
-O32_vals = [-.5, 0, 0.5]
-R23_vals = np.arange(-0.3,1.3,0.01)
-z_vals = np.arange(6.5,9.5,0.01)
-for j,ls in zip(O32_vals,['-','--','-.']):
-    idx = np.argwhere(np.diff(np.sign(mcgaugh91_up(R23_vals,j) - mcgaugh91_dw(R23_vals,j)))).flatten()
-    ax5['a'].plot(R23_vals[R23_vals <= R23_vals[idx]], mcgaugh91_up(R23_vals[R23_vals <= R23_vals[idx]],j), 'k', ls=ls)
-    ax5['a'].plot(R23_vals[R23_vals <= R23_vals[idx]], mcgaugh91_dw(R23_vals[R23_vals <= R23_vals[idx]],j), 'k', ls=ls)
-# Plot the upper branch solution
-ax5['a'].errorbar(np.log10(M101Data[i]['R23']), np.nanmedian(m101_z_up[:,i]), 
-   xerr = (0.434*M101Data[i]['R23_err'])/M101Data[i]['R23'], 
-   yerr = np.nanstd(m101_z_up[:,i]), mec='r', mfc='r', marker='o', markersize=10, ecolor='r', elinewidth=2, 
-   capsize = 5, mew=2)
-# Plot the lower branch solution
-ax5['a'].errorbar(np.log10(M101Data[i]['R23']), np.nanmedian(m101_z_dw[:,i]), 
-   xerr = (0.434*M101Data[i]['R23_err'])/M101Data[i]['R23'], 
-   yerr = np.nanstd(m101_z_dw[:,i]), mec='b', mfc='b', marker='^', markersize=10, ecolor='b', elinewidth=2, 
-   capsize = 5, mew=2)
-# Plot the upper and lower branch histograms
-ax5['b'].hist(m101_z_up[:,i], bins=25, histtype='step', color='r', ls='-', lw=2)
-ax5['b'].hist(m101_z_dw[:,i], bins=25, histtype='step', color='b', ls='--', lw=2)
-# Set plot kwargs
-ax5['a'].set_xlabel(r'$\log(R_{23})$')
-ax5['a'].set_ylabel(r'$12 + \log(\mathrm{O}/\mathrm{H})_{\mathrm{M91}}$')
-ax5['b'].set_xlabel(r'$12 + \log(\mathrm{O}/\mathrm{H})_{\mathrm{M91}}$')
-ax5['b'].set_ylabel(r'$N$')
-ax5['a'].set_xlim(-0.3,1.3)
-ax5['a'].set_ylim(6.5,9.5)
-ax5['b'].set_xlim(6.5,9.5)
-
-# If upper branch solution is above lower branch solution
-if np.nanmedian(m101_z_up[:,i]) > np.nanmedian(m101_z_dw[:,i]):
-    # If they aren't well-separated, i.e., within each other's 1*sigma
-    if (np.nanmedian(m101_z_up[:,i]) - np.nanstd(m101_z_up[:,i]) < np.nanmedian(m101_z_dw[:,i])) and (np.nanmedian(m101_z_dw[:,i]) + np.nanstd(m101_z_dw[:,i]) > np.nanmedian(m101_z_up[:,i])):
-        (mu1, sig1) = norm.fit(m101_z_up[:,i][~np.isnan(m101_z_up[:,i])])
-        (mu2, sig2) = norm.fit(m101_z_dw[:,i][~np.isnan(m101_z_dw[:,i])])
-        avg = np.nanmean([np.nanmedian(m101_z_up[:,i]), np.nanmedian(m101_z_dw[:,i])])
-        sig = np.nanmedian([np.nanstd(m101_z_up[:,i]),np.nanstd(m101_z_dw[:,i])])
-        ax5['b'].axvline(avg, color='k', ls='-', lw=2, label=r'$12 + \log(\mathrm{{O}}/\mathrm{{H}}) = {:.2f} \pm {:.2f}$'.format(avg,sig))
-        ax5['b'].legend(loc='best')
-    # If they are well-separated, let the initial guess decide which branch to use
-    else:
-        if Z_guess[i] <= 8.4:
-            ax5['b'].axvline(np.nanmedian(m101_z_dw[:,i]), color='k', ls='-', lw=2, label=r'$12 + \log(\mathrm{{O}}/\mathrm{{H}}) = {:.2f} \pm {:.2f}$'.format(np.nanmedian(m101_z_dw[:,i]),np.nanstd(m101_z_dw[:,i])))
-            ax5['b'].legend(loc='best')
-        else:
-            ax5['b'].axvline(np.nanmedian(m101_z_up[:,i]), color='k', ls='-', lw=2, label=r'$12 + \log(\mathrm{{O}}/\mathrm{{H}}) = {:.2f} \pm {:.2f}$'.format(np.nanmedian(m101_z_up[:,i]),np.nanstd(m101_z_up[:,i])))
-            ax5['b'].legend(loc='best')
-# If upper branch solution is below lower branch solution
-elif np.nanmedian(m101_z_up[:,i]) < np.nanmedian(m101_z_dw[:,i]):
-    # If they aren't well-separated, i.e., within each other's 1*sigma
-    if (np.nanmedian(m101_z_up[:,i]) + np.nanstd(m101_z_up[:,i]) > np.nanmedian(m101_z_dw[:,i])) and (np.nanmedian(m101_z_dw[:,i]) - np.nanstd(m101_z_dw[:,i]) < np.nanmedian(m101_z_up[:,i])):
-        (mu1, sig1) = norm.fit(m101_z_up[:,i][~np.isnan(m101_z_up[:,i])])
-        (mu2, sig2) = norm.fit(m101_z_dw[:,i][~np.isnan(m101_z_dw[:,i])])
-        avg = np.nanmean([np.nanmedian(m101_z_up[:,i]), np.nanmedian(m101_z_dw[:,i])])
-        sig = np.nanmedian([np.nanstd(m101_z_up[:,i]),np.nanstd(m101_z_dw[:,i])])
-        ax5['b'].axvline(avg, color='k', ls='-', lw=2, label=r'$12 + \log(\mathrm{{O}}/\mathrm{{H}}) = {:.2f} \pm {:.2f}$'.format(avg,sig))
-        ax5['b'].legend(loc='best')
-    # If they are well-separated, mark it as indeterminant
-    else:
-        ax5['b'].text(0.05,0.9,'No determination possible', ha='left', va='center', transform=ax5['b'].transAxes)
-
-```
-
 
     
 ![png](./Moustakas_Method_27_0.png)
@@ -516,79 +435,6 @@ elif np.nanmedian(m101_z_up[:,i]) < np.nanmedian(m101_z_dw[:,i]):
 
 Finally, the third case is where no oxygen abundance measurement is possible using the M91 calibration. Here, the upper and lower branch solutions are statistically inconsistent with each other, given the measurement uncertainties; therefore no solution exists, and these objects must be rejected.
 
-
-```python
-i = 85
-
-fig5 = plt.figure(figsize=(14,7), constrained_layout=True)
-ax5 = fig5.subplot_mosaic(
-        """
-        ab
-        """)
-
-# Plot the M91 calibration for particular O32 values
-O32_vals = [-.5, 0, 0.5]
-R23_vals = np.arange(-0.3,1.3,0.01)
-z_vals = np.arange(6.5,9.5,0.01)
-for j,ls in zip(O32_vals,['-','--','-.']):
-    idx = np.argwhere(np.diff(np.sign(mcgaugh91_up(R23_vals,j) - mcgaugh91_dw(R23_vals,j)))).flatten()
-    ax5['a'].plot(R23_vals[R23_vals <= R23_vals[idx]], mcgaugh91_up(R23_vals[R23_vals <= R23_vals[idx]],j), 'k', ls=ls)
-    ax5['a'].plot(R23_vals[R23_vals <= R23_vals[idx]], mcgaugh91_dw(R23_vals[R23_vals <= R23_vals[idx]],j), 'k', ls=ls)
-# Plot the upper branch solution
-ax5['a'].errorbar(np.log10(M101Data[i]['R23']), np.nanmedian(m101_z_up[:,i]), 
-   xerr = (0.434*M101Data[i]['R23_err'])/M101Data[i]['R23'], 
-   yerr = np.nanstd(m101_z_up[:,i]), mec='r', mfc='r', marker='o', markersize=10, ecolor='r', elinewidth=2, 
-   capsize = 5, mew=2)
-# Plot the lower branch solution
-ax5['a'].errorbar(np.log10(M101Data[i]['R23']), np.nanmedian(m101_z_dw[:,i]), 
-   xerr = (0.434*M101Data[i]['R23_err'])/M101Data[i]['R23'], 
-   yerr = np.nanstd(m101_z_dw[:,i]), mec='b', mfc='b', marker='^', markersize=10, ecolor='b', elinewidth=2, 
-   capsize = 5, mew=2)
-# Plot the upper and lower branch histograms
-ax5['b'].hist(m101_z_up[:,i], bins=25, histtype='step', color='r', ls='-', lw=2)
-ax5['b'].hist(m101_z_dw[:,i], bins=25, histtype='step', color='b', ls='--', lw=2)
-# Set plot kwargs
-ax5['a'].set_xlabel(r'$\log(R_{23})$')
-ax5['a'].set_ylabel(r'$12 + \log(\mathrm{O}/\mathrm{H})_{\mathrm{M91}}$')
-ax5['b'].set_xlabel(r'$12 + \log(\mathrm{O}/\mathrm{H})_{\mathrm{M91}}$')
-ax5['b'].set_ylabel(r'$N$')
-ax5['a'].set_xlim(-0.3,1.3)
-ax5['a'].set_ylim(6.5,9.5)
-ax5['b'].set_xlim(6.5,9.5)
-
-# If upper branch solution is above lower branch solution
-if np.nanmedian(m101_z_up[:,i]) > np.nanmedian(m101_z_dw[:,i]):
-    # If they aren't well-separated, i.e., within each other's 1*sigma
-    if (np.nanmedian(m101_z_up[:,i]) - np.nanstd(m101_z_up[:,i]) < np.nanmedian(m101_z_dw[:,i])) and (np.nanmedian(m101_z_dw[:,i]) + np.nanstd(m101_z_dw[:,i]) > np.nanmedian(m101_z_up[:,i])):
-        (mu1, sig1) = norm.fit(m101_z_up[:,i][~np.isnan(m101_z_up[:,i])])
-        (mu2, sig2) = norm.fit(m101_z_dw[:,i][~np.isnan(m101_z_dw[:,i])])
-        avg = np.nanmean([np.nanmedian(m101_z_up[:,i]), np.nanmedian(m101_z_dw[:,i])])
-        sig = np.nanmedian([np.nanstd(m101_z_up[:,i]),np.nanstd(m101_z_dw[:,i])])
-        ax5['b'].axvline(avg, color='k', ls='-', lw=2, label=r'$12 + \log(\mathrm{{O}}/\mathrm{{H}}) = {:.2f} \pm {:.2f}$'.format(avg,sig))
-        ax5['b'].legend(loc='best')
-    # If they are well-separated, let the initial guess decide which branch to use
-    else:
-        if Z_guess[i] <= 8.4:
-            ax5['b'].axvline(np.nanmedian(m101_z_dw[:,i]), color='k', ls='-', lw=2, label=r'$12 + \log(\mathrm{{O}}/\mathrm{{H}}) = {:.2f} \pm {:.2f}$'.format(np.nanmedian(m101_z_dw[:,i]),np.nanstd(m101_z_dw[:,i])))
-            ax5['b'].legend(loc='best')
-        else:
-            ax5['b'].axvline(np.nanmedian(m101_z_up[:,i]), color='k', ls='-', lw=2, label=r'$12 + \log(\mathrm{{O}}/\mathrm{{H}}) = {:.2f} \pm {:.2f}$'.format(np.nanmedian(m101_z_up[:,i]),np.nanstd(m101_z_up[:,i])))
-            ax5['b'].legend(loc='best')
-# If upper branch solution is below lower branch solution
-elif np.nanmedian(m101_z_up[:,i]) < np.nanmedian(m101_z_dw[:,i]):
-    # If they aren't well-separated, i.e., within each other's 1*sigma
-    if (np.nanmedian(m101_z_up[:,i]) + np.nanstd(m101_z_up[:,i]) > np.nanmedian(m101_z_dw[:,i])) and (np.nanmedian(m101_z_dw[:,i]) - np.nanstd(m101_z_dw[:,i]) < np.nanmedian(m101_z_up[:,i])):
-        (mu1, sig1) = norm.fit(m101_z_up[:,i][~np.isnan(m101_z_up[:,i])])
-        (mu2, sig2) = norm.fit(m101_z_dw[:,i][~np.isnan(m101_z_dw[:,i])])
-        avg = np.nanmean([np.nanmedian(m101_z_up[:,i]), np.nanmedian(m101_z_dw[:,i])])
-        sig = np.nanmedian([np.nanstd(m101_z_up[:,i]),np.nanstd(m101_z_dw[:,i])])
-        ax5['b'].axvline(avg, color='k', ls='-', lw=2, label=r'$12 + \log(\mathrm{{O}}/\mathrm{{H}}) = {:.2f} \pm {:.2f}$'.format(avg,sig))
-        ax5['b'].legend(loc='best')
-    # If they are well-separated, mark it as indeterminant
-    else:
-        ax5['b'].text(0.05,0.9,'No determination possible', ha='left', va='center', transform=ax5['b'].transAxes)
-
-```
 
 
     
