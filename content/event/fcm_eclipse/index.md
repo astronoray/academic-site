@@ -40,7 +40,7 @@ tags:
 featured: true
 
 image:
-  caption: "Image Credit: [Karen Kayser](https://unsplash.com/@lifelady)"
+  caption: "Image Credit: [kgav84](https://www.astrobin.com/users/kgav8r/)"
   focal_point: Right
 
 links:
@@ -67,7 +67,13 @@ slides: ""
 #   Otherwise, set `projects = []`.
 projects:
 - []
+
+
+
+
+
 ---
+
 
 <!-- {{% callout note %}}
 Click on the **Slides** button above to view the built-in slides feature.
@@ -80,3 +86,5 @@ Slides can be added in a few ways:
 - **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://wowchemy.com/docs/writing-markdown-latex/).
 
 Further event details, including [page elements](https://wowchemy.com/docs/writing-markdown-latex/) such as image galleries, can be added to the body of this page. -->
+Images copyright by Abbey Santoro/Laura McKenzie/Texas A&M University Department of Marketing & Communications
+{{< gallery album="eclipse_fcm" >}}
