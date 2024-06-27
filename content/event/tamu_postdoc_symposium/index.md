@@ -1,30 +1,30 @@
 ---
-title: "Exploring the Correlation of Oxygen Abundance and Ionization Parameter in NGC 628 with SIGNALS"
+title: "NGC 628 in SIGNALS: Explaining the Abundance-Ionization Correlation in HII Regions"
 
-event: "Recipes to Regulate Star Formation at All Scales: From the Nearby Universe to the First Galaxies"
-event_url: https://www.stsci.edu/contents/events/stsci/2024/april/recipes-to-regulate-star-formation-at-all-scales
+event: "8th Annual Postdoctoral Symposium"
+event_url: 
 
-location: Space Telescope Science Institute
+location: Texas A&M University Memorial Student Center
 address:
-  street: 3700 San Martin Dr
-  city: Baltimore
-  region: MD
-  postcode: '21218'
+  street: 275 Joe Routt Blvd
+  city: College Station
+  region: TX
+  postcode: '77843'
   country: United States
 
-summary: A poster presentation displaying ongoing work into the oxygen abundance and ionization parameter in NGC 628   
-abstract: The variations of oxygen abundance and ionization parameter in HII regions are usually thought to be the dominant factors that produce the variations seen in observed emission line spectra. However, if and how these two quantities are physically related is hotly debated in the literature. We present ongoing research into the correlation between abundance and ionization parameter using the Star formation, Ionized Gas, and Nebular Abundances Legacy Survey's (SIGNALS) large sample of Local Universe HII regions collected with the CFHT imaging spectrograph SITELLE. Using a combination of this large observational data set and photoionization models, we show that the correlation (if any) between ionization parameter and oxygen abundance is highly model dependent.
+summary: A poster presentation about my work investigating the correlation between the ionization parameter and oxygen abundance in NGC 628.    
+abstract: The variations of oxygen abundance and ionization parameter in HII regions are usually thought to be the dominant factors that produced variations seen in observed emission line spectra. However, if and how these two quantities are physically related is hotly debated in the literature. Using emission line data of NGC 628 observed with SITELLE as part of SIGNALS, we use a suite of photoionization models to constrain the abundance and ionization parameters for over 1500 HII regions throughout its disk. We measure an anticorrelation between these two properties, consistent with expectations, although with considerable scatter. Secondary trends with dust extinction and star formation potentially explain the large scatter observed. We raise concerns throughout regarding various modeling assumptions and their impact on the observed correlations presented in the literature. 
 
 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2024-04-18T00:00:00Z"
-#date_end: "2024-04-18T23:11:59Z"
-all_day: true
+date: "2024-09-16T13:00:00Z"
+date_end: "2024-09-16T17:00:00Z"
+all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2024-04-12T00:00:00Z"
+publishDate: "2024-06-27T00:00:00Z"
 
 authors: 
 - admin
@@ -36,16 +36,16 @@ tags:
 - TAMU
 - SIGNALS
 - academic talk
-- STScI
-- conference
-- baltimore
-- maryland
+- poster
+- symposium
+- college station
+- texas
 
 # Is this a featured talk? (true/false)
-featured: true
+featured: false
 
 image:
-  caption: "Image Credit: [ESA/Webb, NASA & CSA, J. Lee and the PHANGS-JWST Team](https://www.esa.int/ESA_Multimedia/Images/2022/08/Phantom_Galaxy_across_the_spectrum)"
+  caption: "Image Credit: [ESO, J. Emerson, VISTA](https://www.eso.org/public/images/eso0949a/)"
   focal_point: Right
 
 links:
@@ -55,7 +55,7 @@ links:
 #   url: https://twitter.com/georgecushen
 url_code: ""
 url_pdf: ""
-url_slides: "https://drive.google.com/file/d/1uAMojdP6snSW343TFCgztCKPfX0COppr/view?usp=sharing"
+url_slides: ""
 url_video: ""
 
 # Markdown Slides (optional).
@@ -86,4 +86,3 @@ Slides can be added in a few ways:
 
 Further event details, including [page elements](https://wowchemy.com/docs/writing-markdown-latex/) such as image galleries, can be added to the body of this page. -->
 
-{{< figure src="2024-symposium-recipes-to-regulate-star-formation-poster.jpg" >}}
