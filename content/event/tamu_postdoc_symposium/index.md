@@ -1,5 +1,6 @@
 ---
-title: "NGC 628 in SIGNALS: Explaining the Abundance-Ionization Correlation in HII Regions"
+title: "Poster: NGC 628 in SIGNALS"
+
 
 event: "8th Annual Postdoctoral Symposium"
 event_url: 
