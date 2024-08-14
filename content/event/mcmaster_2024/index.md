@@ -54,7 +54,7 @@ links:
 #   name: Follow
 #   url: https://twitter.com/georgecushen
 url_code: ""
-url_pdf: ""
+url_pdf: "https://drive.google.com/file/d/1VQaTs7_Dy3FNCCqAMDBPg5iDpEZcweI5/view?usp=drive_link"
 url_slides: ""
 url_video: ""
 
