@@ -72,6 +72,17 @@ slides: ""
 #   Otherwise, set `projects = []`.
 projects:
 - []
+
+gallery_item:
+- album: mcmaster
+  image: img1.png
+  caption: Giving my talk
+- album: mcmaster
+  image: img2.jpg
+  caption: "The SIGNALS representation at the conference. From left to right: myself, Emma Jarvis (U. of Toronto), James Garland (U. of Toronto), Carmelle Robert (U. Laval)"
+- album: mcmaster
+  image: img3.png
+  caption: "The Texas A&M University representation at the conference, Vinny D'Onofrio (left) and myself (right)."
 ---
 
 <!-- {{% callout note %}}
@@ -86,3 +97,4 @@ Slides can be added in a few ways:
 
 Further event details, including [page elements](https://wowchemy.com/docs/writing-markdown-latex/) such as image galleries, can be added to the body of this page. -->
 
+{{< gallery album="mcmaster" >}}
