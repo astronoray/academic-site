@@ -1,44 +1,45 @@
 ---
-title: The Apollo 11 Mission and Space Travel
+title: "Welcome to the Night Sky: A Talk and Star Party!"
 
-event: The Apollo 11 Mission and Space Travel
-event_url: www.andover.lib.oh.us/live/events/apollo-ii-mission-and-space-travel
+event: 
+event_url: 
 
-location: Andover Public Library
+location: Navasota Center
 address:
-  street: 142 West Main St
-  city: Andover
-  region: OH
-  postcode: '44003'
+  street: 101 Stadium Dr
+  city: Navasota
+  region: TX
+  postcode: '77868'
   country: United States
 
-summary: A talk given in honor of the 50th anniversary of the Apollo 11 moon landing. 
-abstract: July 20, 2019 marks the 50th anniversary of the first humans landing on the Moon on July 20, 1969 at part of NASA's Apollo 11 lunar mission. Join us on Wednesday, July 17th, as we celebrate the anniversary of this historic event. Presenter Ray Garner III is a NASA Solar System Ambassador. This all-ages educational program will provide information about the Apollo 11 mission and the training of astronauts. 
+summary: A public talk serving as an introduction to the night sky! Members of the Brazos Valley Astronomy Club will also be present to host a Star Party after the talk. 
+abstract: "Did you know you can see a galaxy 2.5 million light years away with your unaided eye? Craters on the Moon with binoculars? The red glow of stars forming from their birth clouds? Countless wonders await you any clear night. The first step towards being an astronomer is to simply look up and ask, “What is that?” Tonight we will answer that question, exploring the night sky with all the tools available to us from our unaided eyes to telescopes available to amateurs everywhere. A few projects and ideas for the aspiring astronomer will also be given to get you started on your own journey through the night sky. Members from the Brazos Valley Astronomy Club will also be present with telescopes for a Star Party after the presentation."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2019-07-17T18:00:00Z"
-date_end: "2019-07-17T19:30:00Z"
+date: "2024-08-30T19:00:00Z"
+date_end: "2024-08-30T22:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2021-10-16T00:00:00Z"
+publishDate: "2024-08-25T00:00:00Z"
 
 authors: 
 - admin
 tags: 
-- andover
 - public talk
-- apollo
-- ohio
+- navasota
+- texas
+- night sky
 - solar system
-- the moon
+- nebula
+- galaxy
 
 # Is this a featured talk? (true/false)
 featured: false
 
 image:
-  caption: Buzz Aldrin on the Moon as photographed by Neil Armstrong
+  caption: 'Image credit: [Logan Carpenter](https://www.astrobin.com/users/DrKrud/)'
   focal_point: Right
 
 links:
