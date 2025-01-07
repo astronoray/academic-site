@@ -19,11 +19,11 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 
-date: ""
-doi: ""
+date: "January 2025"
+doi: "10.3847/1538-4357/ad96b2"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024-12-03"
+publishDate: "2025-01-01"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -35,7 +35,7 @@ publication_types: ["2"]
 publication: 'In *The Astrophysical Journal*'
 publication_short: 'In *ApJ*'
 
-abstract: "The variations of oxygen abundance and ionization parameter in HII regions are usually thought to be the dominant factors that produced variations seen in observed emission line spectra. However, if and how these two quantities are physically related is hotly debated in the literature. Using emission line data of NGC~628 observed with SITELLE as part of the Star-formation, Ionized Gas, and Nebular Abundances Legacy Survey (SIGNALS), we use a suite of photoionization models to constrain the abundance and ionization parameters for over 1500 HII regions throughout its disk. We measure an anti-correlation between these two properties, consistent with expectations, although with considerable scatter. Secondary trends with dust extinction and star formation rate surface density potentially explain the large scatter observed. We raise concerns throughout regarding various modeling assumptions and their impact on the observed correlations presented in the literature. "
+abstract: "The variations of oxygen abundance and ionization parameter in HII regions are usually thought to be the dominant factors that produced variations seen in observed emission line spectra. However, if and how these two quantities are physically related is hotly debated in the literature. Using emission line data of NGC 628 observed with SITELLE as part of the Star-formation, Ionized Gas, and Nebular Abundances Legacy Survey (SIGNALS), we use a suite of photoionization models to constrain the abundance and ionization parameters for over 1500 HII regions throughout its disk. We measure an anti-correlation between these two properties, consistent with expectations, although with considerable scatter. Secondary trends with dust extinction and star formation rate surface density potentially explain the large scatter observed. We raise concerns throughout regarding various modeling assumptions and their impact on the observed correlations presented in the literature. "
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -50,7 +50,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2412.01680'
+url_pdf: 'publication/garner2025_signals/garner2025.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -62,7 +62,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: Figure 1 of Garner et al. (in print)'
+  caption: 'Image credit: Figure 1 of Garner et al. (2025)'
   focal_point: ""
   preview_only: false
 
