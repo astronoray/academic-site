@@ -89,9 +89,9 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/Astrono_Ray
+#- icon: bluesky
+#  icon_pack: fa
+#  link: https://bsky.app/profile/astronoray.bsky.social
 - icon: instagram
   icon_pack: fab
   link: https://www.instagram.com/astronoray
@@ -112,7 +112,7 @@ social:
 highlight_name: true
 ---
 
-Hello! My name is Ray Garner and I am a postdoc in the Astronomy Group at [Texas A&M University](https://physics.tamu.edu/) in College Station, Texas. I am working with [Dr. Rob Kennicutt](https://www.as.arizona.edu/people/faculty/robert-kennicutt) on the Star formation, Ionized Gas, and Nebular Abundances Legacy Survey ([SIGNALS](https://signal-survey.org/)), a survey of HII regions across ~60 galaxies. You can check out the survey paper [here](https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.5530R/abstract). 
+Hello! My name is Ray Garner and I am a postdoc in the Astronomy Group at [Texas A&M University](https://physics.tamu.edu/) in College Station, Texas. I am working with [Dr. Rob Kennicutt](https://www.as.arizona.edu/people/faculty/robert-kennicutt) on the Star formation, Ionized Gas, and Nebular Abundances Legacy Survey ([SIGNALS](https://signal-survey.org/)), a survey of HII regions across ~35 galaxies. You can check out the survey paper [here](https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.5530R/abstract). 
 
 Before I arrived in College Station, I was a graduate student at [Case Western Reserve University](https://astronomy.case.edu/) in Cleveland, Ohio working with [Prof. Chris Mihos](https://burro.case.edu/) on a detailed analysis of the Pinwheel Galaxy (M101) and its small satellite group using the deep, wide-field, narrowband imaging capabilities of the Burrell Schmidt 24/36-inch telescope.  
 

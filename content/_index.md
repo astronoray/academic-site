@@ -237,7 +237,7 @@ sections:
       # text: |-
       #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: ray.garner@tamu.edu
+      email: ray.garner at tamu.edu
       # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
       address:
@@ -256,14 +256,14 @@ sections:
       #   latitude: '37.4275'
       #   longitude: '-122.1697'  
       contact_links:
-        - icon: twitter
-          icon_pack: fab
-          name: Follow Me on Twitter!
-          link: 'https://twitter.com/Astrono_Ray'
-        - icon: instagram
-          icon_pack: fab
-          name: Follow Me on Instagram!
-          link: 'https://instagram.com/astronoray'
+        #- icon: twitter
+        #  icon_pack: fab
+        #  name: Follow Me on Twitter!
+        #  link: 'https://twitter.com/Astrono_Ray'
+        #- icon: instagram
+        #  icon_pack: fab
+        #  name: Follow Me on Instagram!
+        #  link: 'https://instagram.com/astronoray'
         # - icon: video
         #   icon_pack: fas
         #   name: Zoom Me

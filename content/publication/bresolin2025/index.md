@@ -1,33 +1,35 @@
 ---
-title: "Mapping ionized gas properties in NGC 4258 with SITELLE: A laboratory to study the connection between AGN and Star Formation"
+title: "SIGNALS on the mixing of oxygen and nitrogen in the spiral galaxy NGC 6946"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
+- Fabio Bresolin
 - David Fernández-Arenas
 - Laurie Rousseau-Nepton
+- admin
+- Almudena Zurita
 - Carmelle Robert
 - Laurent Drissen
-- Pierre Martin
-- Phillipe Amram
-- Benoit Epinat
+- René Pierre Martin
+- Philippe Amram
+- Benoît Epinat
 - Salvador Duarte Puertas
-- admin
 - Gabriel Savard
-- Sebastien Vicens-Mouret
-- É. Massé
+- Sébastien Vicens
+- Étienne Massé
 
 # Author notes (optional)
 # author_notes:
 # - "Equal contribution"
 # - "Equal contribution"
 
-date: "2024"
+date: "2025"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024-08-11"
+publishDate: "2025-01-30"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -36,10 +38,10 @@ publishDate: "2024-08-11"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: 'Submitted to *The Monthly Notices of the Royal Astronomical Society*'
-publication_short: 'Submitted to *MNRAS*'
+publication: 'In preparation for submission to *MNRAS*'
+publication_short: 'In prep'
 
-abstract: "In this study, we present Integral Field Spectroscopy (IFS) observations of NGC 4258, a spiral galaxy hosting a Low-Luminosity Active Galactic Nucleus (AGN) and a collimated jet. These observations were conducted using the Spectro-Imageur à Transformée de Fourier pour l'Étude en Long et en Large des raies d'Émission (SITELLE) instrument at the Canada-France-Hawaii Telescope of emission-line fluxes for [OII]$\\lambda$3727, H$\\beta$, [OIII]$\\lambda\\lambda$4959,5007, [NII]$\\lambda$6548, H$\\alpha$, [NII]$\\lambda$6583, [SII]$\\lambda\\lambda$6716,31, analysed the spatial distribution, and explored the properties of the ionized gas in the interstellar medium (ISM) and the diagnostic BPT diagrams. The results show that higher excitation gas is preferentially located in the galaxy's centre, consistent with the AGN activity, followed by the LINERS and Composite region located mainly along the jet. The inner and outer spiral arms exhibit star-forming regions showing evidence of shocks well-reproduced by fast shock photoionization models. The emission from the jet is consistent with both the AGN activity and shocks being the ionization source, reaching velocity dispersions up to 250 $\\text{km}$ $\\text{s}^{-1}$ in H$\\alpha$ at a distance of up to 6 kpc from the nucleus toward the bifurcations seen in the south-east jet. By using the mixing sequence defined in the BPT diagrams and correcting H$\\alpha$ emission for dust extinction, we derived a galaxy-wide star formation rate of 3 $\\text{M}\\_\\odot$ $\\text{yr}^{-1}$ and a value of 0.3 $\\text{M}\\_\\odot$ $\\text{yr}^{-1}$ for the central 3.4 $\\text{kpc}^2$." 
+abstract: "We observed the nearby spiral galaxy NGC 6946 with the Fourier transform spectrometer SITELLE, covering the full extent of its optical disc, as part of the SIGNALS survey. Taking advantage of the blue sensitivity of our setup we measure the oxygen and nitrogen abundances of a large sample of HII regions, and focus our analysis on the abundance fluctuations about the radial gradients. We detect an azimuthal variation across the width of the main, NE spiral arm for both elements, with an amplitude of ~0.1 dex, and disucss this result within the context of the radial gas flows along spiral arms predicted by galaxy simulations. We examine the 2D distribution of the O/H and N/H abundance ratios across the galaxy disc by deriving the two-point correlation, finding that the correlation scales of the two elements, which depend on their injection into the ISM and subsequent mixing, are comparable, despite the different nucleosynthetic origin."
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -66,8 +68,10 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: ''
-  focal_point: ""
+  caption: 'Figure 5 of Garner et al. (subm.). From left to right: the stellar velocities, gas velocities, and velocity differences
+  across NGC 5474. The top row of panels shows the velocities, while the bottom row shows their associated uncertainties. The 20 arcsec
+  red circle outlines the position of the putative bulge in each map centered at the origin. North is up and east is to the left.'
+  focal_point: "center"
   preview_only: false
 
 # Associated Projects (optional).
