@@ -14,11 +14,10 @@ authors:
 - Laurent Drissen
 - René Pierre Martin
 - Philippe Amram
-- Benoît Epinat
 - Salvador Duarte Puertas
 - Gabriel Savard
 - Sébastien Vicens
-- Étienne Massé
+- Mykola Posternak
 
 # Author notes (optional)
 # author_notes:
@@ -38,10 +37,10 @@ publishDate: "2025-01-30"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: 'In preparation for submission to *MNRAS*'
-publication_short: 'In prep'
+publication: 'Submitted to *MNRAS*'
+publication_short: 'Submitted to *MNRAS*'
 
-abstract: "We observed the nearby spiral galaxy NGC 6946 with the Fourier transform spectrometer SITELLE, covering the full extent of its optical disc, as part of the SIGNALS survey. Taking advantage of the blue sensitivity of our setup we measure the oxygen and nitrogen abundances of a large sample of HII regions, and focus our analysis on the abundance fluctuations about the radial gradients. We detect an azimuthal variation across the width of the main, NE spiral arm for both elements, with an amplitude of ~0.1 dex, and disucss this result within the context of the radial gas flows along spiral arms predicted by galaxy simulations. We examine the 2D distribution of the O/H and N/H abundance ratios across the galaxy disc by deriving the two-point correlation, finding that the correlation scales of the two elements, which depend on their injection into the ISM and subsequent mixing, are comparable, despite the different nucleosynthetic origin."
+abstract: "As part of the SIGNALS survey, which comprises a sample of approximately 40 nearby galaxies observed with the Fourier transform spectrometer SITELLE, we present a study of metal mixing in the spiral galaxy NGC 6946. Taking advantage of the blue sensitivity of our setup, we measure the oxygen and nitrogen abundances of 638 H II regions, and focus our analysis on the abundance fluctuations about the radial gradients. We detect an azimuthal variation of about 0.1 dex in these abundances across the NE spiral arm, with the leading edge being more metal-poor than the trailing edge. This result aligns with galaxy simulations, where radial gas flows along the spiral arms lead to dilution on the leading edge and enrichment on the trailing edge, due to the presence of radial metallicity gradients. Our 2D analysis reveals that oxygen and nitrogen exhibit comparable spatial correlation scales, despite the different injection energies and distinct nucleosynthetic origins -- core-collapse supernovae in the case of oxygen and primarily AGB stars for nitrogen. The observed similarity suggests that stellar processes drive these two elements into the ISM over equivalent spatial scales."
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -56,6 +55,10 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
+links:
+  - name: arXiv
+    url: https://arxiv.org/abs/2502.00649
+
 url_pdf: ''
 url_code: ''
 url_dataset: ''
@@ -68,9 +71,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Figure 5 of Garner et al. (subm.). From left to right: the stellar velocities, gas velocities, and velocity differences
-  across NGC 5474. The top row of panels shows the velocities, while the bottom row shows their associated uncertainties. The 20 arcsec
-  red circle outlines the position of the putative bulge in each map centered at the origin. North is up and east is to the left.'
+  caption: 'The SITELLE view of NGC 6946 obtained from combining the SN2 and SN3 filter images. Figure 1 in Bresolin et al. (2025).'
   focal_point: "center"
   preview_only: false
 
