@@ -1,33 +1,32 @@
 ---
-title: "Astronomy on Tap: Star-forming Regions and How to Read Them"
+title: "Astronomy on Tap: 110 Things That Are Not Comets"
 
-event: "Astronomy on Tap: Star-forming Regions and How to Read Them"
-event_url: https://twitter.com/AoT_BCS/status/1845834874785026178
+event: "Astronomy on Tap: 110 Things That Are Not Comets"
+event_url: 
 
-location: The Grand Stafford Theater
+location: The 101
 address:
-  street: 106 S Main St
+  street: 101 S Texas Ave
   city: Bryan
   region: TX
   postcode: '77803'
   country: United States
 
-summary: What are star-forming regions? What do the different colors mean in the images from Hubble? This talk will answer those questions and more!     
-abstract: "A free event hosted by the Astronomy students at TAMU, I'll be talking about what star-forming regions (aka nebulae, HII regions) are, 
-          what's going on in them, and how their colors in images tell us about what they're made of."
+summary: Who was Charles Messier and why did he write down a catalog of things that aren't comets? What is in his catalog and can you observe them all in a single night? I'll explain all in this talk about Messier and his catalog!     
+abstract: "A free event hosted by the Astronomy students at TAMU, I'll be talking about Charles Messier and the objects in his catalog and why he was so compelled to write them all down. I'll also walk you through a few of these objects and what we know about them. Finally, I'll give some pointers if you want to complete your own Messier Marathon!"
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2024-10-23T19:00:00Z"
-date_end: "2024-10-23T21:00:00Z"
+date: "2025-02-25T18:00:00Z"
+date_end: "2025-02-25T20:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2024-10-16T00:00:00Z"
+publishDate: "2025-02-16T00:00:00Z"
 
 authors: 
 - admin
-- Briana Wirag
+- Frank Wang
 - Vincenzo D'Onofrio
 tags: 
 - TAMU
