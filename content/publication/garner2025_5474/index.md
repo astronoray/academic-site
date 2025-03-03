@@ -27,8 +27,8 @@ publishDate: "2025-01-07"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: 'Submitted to *The Astrophysical Journal*'
-publication_short: 'Submitted to *ApJ*'
+publication: 'Accepted in *The Astrophysical Journal*'
+publication_short: 'Accepted in *ApJ*'
 
 abstract: "A satellite galaxy of the nearby spiral M101, NGC 5474 has a prominent bulge offset from the kinematic center of the underlying
 star-forming disk that has gained attention in recent years. Recent studies have proposed that this putative offset bulge is not a classical
@@ -45,12 +45,15 @@ summary:
 tags: []
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 # links:
 # - name: Custom Link
 #   url: http://example.org
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2502.21188
 
 url_pdf: ''
 url_code: ''
@@ -64,9 +67,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Figure 5 of Garner et al. (subm.). From left to right: the stellar velocities, gas velocities, and velocity differences
-  across NGC 5474. The top row of panels shows the velocities, while the bottom row shows their associated uncertainties. The 20 arcsec
-  red circle outlines the position of the putative bulge in each map centered at the origin. North is up and east is to the left.'
+  caption: 'Figure 5 of Garner et al. (accepted).'
   focal_point: "center"
   preview_only: false
 
