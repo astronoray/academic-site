@@ -14,8 +14,8 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 
-date: "2025"
-doi: ""
+date: "April 2025"
+doi: "10.3847/1538-4357/adbbd0"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-01-07"
@@ -27,8 +27,8 @@ publishDate: "2025-01-07"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: 'Accepted in *The Astrophysical Journal*'
-publication_short: 'Accepted in *ApJ*'
+publication: 'In *The Astrophysical Journal*'
+publication_short: 'In *ApJ*'
 
 abstract: "A satellite galaxy of the nearby spiral M101, NGC 5474 has a prominent bulge offset from the kinematic center of the underlying
 star-forming disk that has gained attention in recent years. Recent studies have proposed that this putative offset bulge is not a classical
@@ -51,11 +51,11 @@ featured: true
 # links:
 # - name: Custom Link
 #   url: http://example.org
-links:
-- name: arXiv
-  url: https://arxiv.org/abs/2502.21188
+#links:
+#- name: arXiv
+#  url: https://arxiv.org/abs/2502.21188
 
-url_pdf: ''
+url_pdf: 'publication/garner2025_5474/garner2025_5474.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
