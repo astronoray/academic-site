@@ -69,9 +69,9 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-#links:
-#  - name: arXiv
-#    url: https://arxiv.org/abs/2502.00649
+links:
+  - name: arXiv
+    url: https://arxiv.org/abs/2506.21660
 
 url_pdf: ''
 url_code: ''
