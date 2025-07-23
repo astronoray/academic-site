@@ -9,7 +9,7 @@ authors:
 - Laurie Rousseau-Nepton
 - Carmelle Robert
 - Laurent Drissen
-- René Pierre Martin
+- R. Pierre Martin
 - Philippe Amram
 - Benoît Epinat
 - Salvador Duarte Puertas
@@ -27,7 +27,7 @@ date: "2025"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-03-04"
+publishDate: "2025-07-23"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -36,10 +36,10 @@ publishDate: "2025-03-04"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: 'Submitted to *MNRAS*'
-publication_short: 'Submitted to *MNRAS*'
+publication: 'Accepted to *MNRAS*'
+publication_short: 'Accepted to *MNRAS*'
 
-abstract: ""
+abstract: "NGC 4258 is a prime target for studying feedback in Low-Luminosity Active Galactic Nuclei (LLAGNs) due to its proximity and comprehensive multi-wavelength coverage. Using new Integral Field Spectroscopy (IFS) data from SITELLE at the Canada-France-Hawaii Telescope, we analysed the galaxy's nebular emission lines. Our study focused on spatially resolved line ratios and Baldwin-Phillips-Terlevich diagrams, revealing that the 'anomalous spiral arms' exhibit intense interactions between the jet and interstellar medium (ISM) extending up to 6 kpc with velocity dispersions peak at 200-250&#160;km/s in these regions, contrasting with star-forming areas showing lower values around of 30-50&#160;km/s. Analysis of covering fractions indicates heightened AGN ionization cones aligns with the radio jet, alongside evidence of shock quenching observed in the lower 'anomalous arc'. Conversely, jet-induced compression may stimulate star formation in other areas. We derived a galaxy-wide star formation rate of ~3&#160;M$\\_\\odot$&#160;yr$^{-1}$, decreasing to 0.3&#160;M$\\_\\odot$&#160;yr$^{-1}$ within the central 3.4&#160;kpc$^2$. SITELLE's broad field coverage elucidates the galaxy's structural details, confirming that low-power jets significantly influence the host galaxy across parsec and kpc scales. The velocity dispersion map reveals asymmetric or double-peaked emission lines, traicing jet-disk interactions likely responsible for the formation of anomalous arm features. Small-scale ionizing clusters were detected in regions with disrupted gas flows, possibly formed through tidal interactions or shock compression. NGC 4258 thus presents a compelling case for studying LLAGN-driven feedback, illustrating how optical IFS combined with multi-wavelength data clarifies the impact of outflows and shocks on nearby spiral galaxies, providing insights into how these processes shape star formation and ISM conditions."
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -53,7 +53,9 @@ featured: false
 # links:
 # - name: Custom Link
 #   url: http://example.org
-
+links:
+  - name: arXiv
+    url: https://arxiv.org/abs/2507.16153
 
 url_pdf: ''
 url_code: ''
@@ -67,8 +69,8 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: ''
-  focal_point: ""
+  caption: 'Left: The SITELLE view of NGC 4258 with particular morphological features marked. Right: the *HST* view of NGC 4258 at the same scales.'
+  focal_point: "center"
   preview_only: false
 
 # Associated Projects (optional).
