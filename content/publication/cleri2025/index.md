@@ -51,8 +51,8 @@ publishDate: "2025-06-26"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: 'Submitted to *The Astrophysical Journal*'
-publication_short: 'Submitted to *ApJ*'
+publication: 'Accepted to *The Astrophysical Journal*'
+publication_short: 'Accepted to *ApJ*'
 
 abstract: ""
 

@@ -33,8 +33,8 @@ publishDate: "2025-08-29"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: 'In preparation'
-publication_short: 'In prep'
+publication: 'Submitted to *The Astrophysical Journal*'
+publication_short: 'Submitted to *ApJ*'
 
 abstract: "Observing giant HII regions at fine spatial scales uncovers detailed structures and reveals variations in ionization, abundance, and dynamical properties of ionized gas and the effect of stellar feedback. Using emission line data of M33 observed with SITELLE as part of the Star-formation, Ionized Gas, and Nebular Abundances Legacy Survey (SIGNALS), we present maps of the principal optical emission line ratios for NGC 604, the most luminous HII region in M33. The excitation maps align well with the Hα morphology and are clearly related to the location of the central stellar cluster and secondary stellar groups. The maps of ionization-sensitive line ratios show substantial variations across the face of NGC 604. We demonstrate that these variations are unlikely to be due to chemical inhomogeneities but are primarily caused by changes in ionization, which in turn affect the observed line ratios. We present the Hα kinematics of the region and connect it to the excitation structure, showing how the dynamic motions influence the spatial distribution of ionized gas. We note two distinct sources identified in these excitation maps: a known supernova remnant and an unknown point source. Such parsec-scale features contribute only a small percentage to the overall light and would remain undetected without the use of high-resolution spatial data. Throughout the paper, we make comparisons to and raise concerns about single-aperture and long-slit spectroscopic measurements of giant HII regions, highlighting the limitations and potential inaccuracies of such methods."
 
