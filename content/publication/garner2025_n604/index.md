@@ -44,15 +44,15 @@ summary:
 tags: []
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 # links:
 # - name: Custom Link
 #   url: http://example.org
-#links:
-#- name: arXiv
-#  url: https://arxiv.org/abs/2502.21188
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2510.03144
 
 url_pdf: ''
 url_code: ''
@@ -66,7 +66,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: ''
+  caption: "SITELLE's deep imaging of NGC 604. Figure 1 in Garner+26"
   focal_point: ""
   preview_only: false
 
