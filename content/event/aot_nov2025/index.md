@@ -26,7 +26,7 @@ publishDate: "2025-11-16T00:00:00Z"
 
 authors: 
 - admin
-- Frank Wang
+- Meghan Kirk
 - Vincenzo D'Onofrio
 tags: 
 - TAMU
