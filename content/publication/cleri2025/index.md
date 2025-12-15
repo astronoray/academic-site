@@ -38,8 +38,8 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 
-date: "2025"
-doi: ""
+date: "December 2025"
+doi: "https://doi.org/10.3847/1538-4357/ae0f17"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-06-26"
@@ -48,13 +48,13 @@ publishDate: "2025-06-26"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: 'Accepted to *The Astrophysical Journal*'
-publication_short: 'Accepted to *ApJ*'
+publication: 'In *The Astrophysical Journal*'
+publication_short: 'In *ApJ*'
 
-abstract: ""
+abstract: "High-redshift observations from JWST indicate that optical strong line ratios do not carry the same constraining power as they do at low redshifts. Critically, this prevents a differentiation between stellar and black hole accretion-driven ionization, thereby obscuring both active galactic nuclei (AGN) demographics and star formation rates. To investigate this, we compute a large suite of photoionization models with Cloudy powered by stellar populations and accreting black holes over a large grid of ages, metallicities, initial mass functions, binarities, ionization parameters, densities, and black hole masses. We use these models to test three rest-frame optical diagnostics designed to separate ionizing sources at low redshifts: the [N II]-BPT, VO87, and OHNO diagrams. We show that these diagnostics are strongly driven by the ionization parameter (log U) and the gas-phase metallicity (Z<sub>gas</sub>), often more so than the ionizing spectrum itself; there is significant overlap between stellar population and accreting black hole models at high log U and low Z<sub>gas</sub>. The OHNO diagram is especially contaminated in the AGN region by stellar models with high log U and low Z<sub>gas</sub>, consistent with high-redshift observations. We show that the [N II]-BPT, VO87, or OHNO diagrams are most sensitive to the shape of the <54 eV ionizing continuum, an energy regime in which stellar populations and black hole accretion disk models can be highly degenerate. Finally, we discuss the potential for emission lines that trace the >54 eV ionizing continuum to differentiate between ionizing sources more effectively than the [N II]-BPT, VO87, or OHNO diagrams alone."
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -73,7 +73,7 @@ links:
   - name: arXiv
     url: https://arxiv.org/abs/2506.21660
 
-url_pdf: ''
+url_pdf: 'publication/cleri2025/Cleri_2025_ApJ_994_146.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -85,7 +85,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 
+  caption: Figure 4 of Cleri et al. (2025).
   focal_point: "center"
   preview_only: false
 
